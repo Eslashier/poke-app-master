@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+
+.containerPokemons {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .buttonBack {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 4% 0.25% 4%;
+        margin: 2px;
+        font-size: 1.3vw;
+        font-family: "Risque";
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+        font-size: 4vw;
+    }
+
+    input[type=search] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 50%;
+        height: 5vw;
+        font-size: 3.5vw;
+        font-family: "Risque";
+    }
+
+    input[type=submit] {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 10% 0.25% 10%;
+        margin: 2px;
+        font-size: 6vw;
+        font-family: "Risque";
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    }
+
+    input[type=text] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 75%;
+        height: 6vw;
+        font-size: 3vw;
+        font-family: "Risque";
+    }
+
+    .middle {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .title{
+        font-size: 6vw;
+        font-family: "Risque";
+        color: #490b72;
+        font-family: "Risque";
+    }
+    
+    .nameLabel{
+        font-size: 5vw;
+        color: #490b72;
+        font-family: "Risque";
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .buttonBack {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 1% 8% 0.25% 8%;
+        margin: 2px;
+        font-size: 1vw;
+        font-family: "Risque";
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    }
+
+    input[type=search] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 35%;
+        height: 2vw;
+        font-size: 1.5vw;
+        font-family: "Risque";
+    }
+
+    input[type=submit] {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 4% 0.25% 4%;
+        margin: 2px;
+        font-size: 1.5vw;
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+        font-family: "Risque";
+    }
+
+    input[type=text] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 30%;
+        height: 2vw;
+        font-size: 1.5vw;
+        font-family: "Risque";
+    }
+
+    .middle {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .title{
+        font-size: 2.5vw;
+        color: #490b72;
+        font-family: "Risque";
+    }
+
+    .alert{
+        font-size: 1vw;
+        color: #aa1b16;
+        font-family: "Risque";
+    }
+    
+    .nameLabel{
+        font-size: 1.5vw;
+        color: #490b72;
+        font-family: "Risque";
+    }
+}
+
+
+.buttonBack:hover {
+    box-shadow: 0 8px 16px 0 #490b72;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
