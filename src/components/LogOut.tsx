@@ -10,6 +10,7 @@ const LogOut = () => {
     const logOutApp = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault()
         dispatch(logOutUserReducer())
+        window.localStorage.clear();
         navigate("/login")
     }
 

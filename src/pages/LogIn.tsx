@@ -1,6 +1,6 @@
 import "./grid.css"
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { loginType, logInUserReducer, logOutUserReducer } from "../state/slice/loginSlice";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../state/store";
@@ -14,6 +14,15 @@ const Login = () => {
 
     let navigate = useNavigate();
 
+    const logStatus = useSelector((state: RootState) => state.login)
+    const isLoggedIn = logStatus.login.isLoggedIn
+
+    useEffect(() => {
+        if(isLoggedIn || localStorage.getItem("name")){
+            navigate("/")
+        }
+    }, [])
+
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (name) {
@@ -22,6 +31,7 @@ const Login = () => {
                 isLoggedIn: true,
             }
             dispatch(logInUserReducer(userLog))
+            localStorage.setItem("name", name);
             navigate("/")
         } else {
             setValidate(false)

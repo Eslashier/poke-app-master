@@ -9,7 +9,7 @@ const PrivateRoute = (props: { children: React.ReactNode }): JSX.Element => {
     const logStatus = useSelector((state: RootState) => state.login)
     const isLoggedIn = logStatus.login.isLoggedIn
   
-    return isLoggedIn ? (
+    return (isLoggedIn || localStorage.getItem("name")) ? (
       <>{children}</>
     ) : (
       <Navigate to="/login"/>

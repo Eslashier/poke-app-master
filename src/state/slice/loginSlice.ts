@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 type loginType = {
-    name?: string,
+    name?: string ,
     isLoggedIn: true | false,
 }
 
